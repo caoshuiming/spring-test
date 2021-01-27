@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 public interface UserDao {
 
     public void save();
+
+    public void car();
 }

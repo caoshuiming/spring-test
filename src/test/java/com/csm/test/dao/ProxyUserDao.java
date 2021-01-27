@@ -21,4 +21,9 @@ public class ProxyUserDao implements UserDao {
         System.out.println("执行后");
         System.out.println("执行时间：" + (end.getTime() - start.getTime()));
     }
+
+    @Override
+    public void car() {
+
+    }
 }

@@ -1,6 +1,8 @@
 package com.csm.application;
 
 import com.csm.dao.CarDao;
+import com.csm.dao.UserDao;
+import com.csm.dao.impl.UserDaoImpl;
 import com.csm.service.UserService;
 import com.csm.service.impl.UserServiceImpl;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -24,8 +26,14 @@ public class SpringApplication {
 //        System.out.println(userService.getClass());
 //        userService.save();
 
+//        CarDao carDao = context.getBean(CarDao.class);
+//        System.out.println(carDao.getClass());
+//        System.out.println(CarDao.class.isAssignableFrom(carDao.getClass()));
+//        System.out.println(carDao.getClass().getSuperclass());
+//        carDao.drive();
+
         CarDao carDao = context.getBean(CarDao.class);
-        System.out.println(carDao.getClass());
         carDao.drive();
+        carDao.stop();
     }
 }
