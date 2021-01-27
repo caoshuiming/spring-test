@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f8d09e-bb94-4d52-bc9e-371c4f86107f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/SingleTonUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csm/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csm/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/csm/test/dao/ProxyUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/csm/test/dao/ProxyUserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/csm/test/proxy/ProxyJDK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/csm/test/service/ProxyUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/csm/test/service/ProxyUserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/csm/dao/CarDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/csm/test/proxy/ProxyCglib.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/ApplicationStatedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/ApplicationStatedListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/ScheduleTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/ScheduleTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/SpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/SpringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/daos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/daos.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/ScheduleTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/SpringApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/application/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/application/SpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/application/SpringApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csm/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csm/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/csm/test/service/ProxyUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/csm/test/service/ProxyUserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/application/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csm/application/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/application/SpringApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csm/application/SpringApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csm/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csm/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/csm/test/service/ProxyUserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/csm/test/service/ProxyUserServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +57,13 @@
       <recent name="E:\GitHubWorkSpace\test\src\main\java\com\csm\application" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProxyUserServiceTest.testProxyUserServiceJDK">
-    <configuration name="SpringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.csm.SpringApplication" />
+  <component name="RunManager" selected="Application.SpringApplication (1)">
+    <configuration name="SpringApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.csm.application.SpringApplication" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.csm.test.proxy.*" />
+          <option name="PATTERN" value="com.csm.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,6 +103,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProxyUserServiceTest.testCglibProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csm.test.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csm.test.service" />
+      <option name="MAIN_CLASS_NAME" value="com.csm.test.service.ProxyUserServiceTest" />
+      <option name="METHOD_NAME" value="testCglibProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProxyUserServiceTest.testProxyUserServiceJDK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
@@ -133,10 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringApplication (1)" />
+        <item itemvalue="JUnit.ProxyUserServiceTest.testCglibProxy" />
         <item itemvalue="JUnit.ProxyUserServiceTest.testProxyUserServiceJDK" />
         <item itemvalue="JUnit.ProxyUserServiceTest.test" />
         <item itemvalue="JUnit.ProxyUserDaoTest.ProxyUserDaoTest" />
-        <item itemvalue="Application.SpringApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +157,8 @@
       <updated>1611625200256</updated>
       <workItem from="1611625204085" duration="6845000" />
       <workItem from="1611632742592" duration="192000" />
-      <workItem from="1611641072884" duration="9186000" />
+      <workItem from="1611641072884" duration="10373000" />
+      <workItem from="1611709874915" duration="5472000" />
     </task>
     <servers />
   </component>
@@ -160,10 +166,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1611651569233">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1611711821907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611651569233" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611711821907" />
     <state x="979" y="279" width="429" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611651614692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,37 +178,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="641" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1611651627675" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1611652004263">
+    <state width="1493" height="184" key="GridCell.Tab.0.bottom" timestamp="1611717428969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611652004263" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1611652004263">
+    <state width="1493" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611717428969" />
+    <state width="1493" height="184" key="GridCell.Tab.0.center" timestamp="1611717428968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611652004263" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1611652004263">
+    <state width="1493" height="184" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611717428968" />
+    <state width="1493" height="184" key="GridCell.Tab.0.left" timestamp="1611717428968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611652004263" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1611652004263">
+    <state width="1493" height="184" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611717428968" />
+    <state width="1493" height="184" key="GridCell.Tab.0.right" timestamp="1611717428969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611652004263" />
-    <state width="658" height="258" key="GridCell.Tab.1.bottom" timestamp="1611648820301">
+    <state width="1493" height="184" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611717428969" />
+    <state width="658" height="258" key="GridCell.Tab.1.bottom" timestamp="1611654647801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="658" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611648820301" />
-    <state width="658" height="258" key="GridCell.Tab.1.center" timestamp="1611648820301">
+    <state width="658" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611654647801" />
+    <state width="658" height="258" key="GridCell.Tab.1.center" timestamp="1611654647801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="658" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1611648820301" />
-    <state width="658" height="258" key="GridCell.Tab.1.left" timestamp="1611648820301">
+    <state width="658" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1611654647801" />
+    <state width="658" height="258" key="GridCell.Tab.1.left" timestamp="1611654647801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="658" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1611648820301" />
-    <state width="658" height="258" key="GridCell.Tab.1.right" timestamp="1611648820301">
+    <state width="658" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1611654647801" />
+    <state width="658" height="258" key="GridCell.Tab.1.right" timestamp="1611654647801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="658" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611648820301" />
+    <state width="658" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611654647801" />
   </component>
 </project>

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("userService")
 @Scope("prototype")
 public class UserServiceImpl implements UserService {
 
@@ -16,6 +16,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public void save(){
 //        userDao.save();
+        System.out.println(this.getClass());
+        update();
         System.out.println("userService save");
     }
 
