@@ -1,4 +1,4 @@
-package com.csm.mvc;
+package com.csm;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.csm.controller")
+//@ComponentScan("com.csm.controller")
+@ComponentScan
 public class MvcConfig implements WebMvcConfigurer {
 
     @Bean

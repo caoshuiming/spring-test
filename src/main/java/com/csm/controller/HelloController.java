@@ -4,6 +4,7 @@ import com.csm.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -28,6 +29,7 @@ public class HelloController {
     @ResponseBody
     public String hello(){
         System.out.println(applicationContext.getBean("commonsMultipartResolver"));
+        CollectionUtils.arrayToList(applicationContext.getBeanDefinitionNames()).forEach(item -> System.out.println(item));
         return "hello";
     }
 

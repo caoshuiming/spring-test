@@ -1,8 +1,6 @@
 package com.csm.application;
 
-import com.csm.controller.HelloController;
-import com.csm.mvc.MvcConfig;
-import com.csm.servlet.HelloServlet;
+import com.csm.annotation.SpringBootAnnotation;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.connector.Connector;
 import org.apache.catalina.core.StandardContext;
@@ -10,8 +8,9 @@ import org.apache.catalina.startup.Tomcat;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
+@SpringBootAnnotation
 public class SpringApplication {
-    public static void main(String[] args) throws LifecycleException {
+    public static void run(String[] args) throws LifecycleException {
 
 //        System.out.println(SingleTonUser.getInstance());
 //        System.out.println(SingleTonUser.getInstance());
@@ -60,7 +59,8 @@ public class SpringApplication {
         tomcat.start();
 
         AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
-        webApplicationContext.register(MvcConfig.class);
+        // 入口类
+        webApplicationContext.register(SpringApplication.class);
         webApplicationContext.setServletContext(standardContext.getServletContext());
         webApplicationContext.refresh();
         DispatcherServlet dispatcherServlet = new DispatcherServlet(webApplicationContext);
