@@ -14,7 +14,7 @@ public class HelloServlet extends HttpServlet {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");
         PrintWriter pw = resp.getWriter();
-        pw.write("hello world");
+        pw.write("波哥！永远滴神！");
         pw.flush();
         pw.close();
     }

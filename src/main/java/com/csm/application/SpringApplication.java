@@ -52,7 +52,7 @@ public class SpringApplication {
 
 //        StandardServer server = (StandardServer) tomcat.getServer();
         StandardContext standardContext = new StandardContext();
-        standardContext.addLifecycleListener(new Tomcat.FixContextListener());
+        standardContext.addLifecycleListener(new Tomcat.FixContextListener()); // FixContextListener，这个主要是在项目 部署完后，将这个上下文设置为configured，表示已经配置好了（不然，tomcat启动时会报错，即相应上下文还未配置好）。
         standardContext.setPath("/mvc");
 
         tomcat.getHost().addChild(standardContext);
