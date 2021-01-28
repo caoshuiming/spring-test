@@ -1,17 +1,14 @@
 package com.csm.application;
 
-import com.csm.dao.CarDao;
-import com.csm.dao.UserDao;
-import com.csm.dao.impl.UserDaoImpl;
-import com.csm.service.UserService;
-import com.csm.service.impl.UserServiceImpl;
+import com.csm.controller.HelloController;
+import com.csm.mvc.MvcConfig;
 import com.csm.servlet.HelloServlet;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.connector.Connector;
 import org.apache.catalina.core.StandardContext;
-import org.apache.catalina.core.StandardServer;
 import org.apache.catalina.startup.Tomcat;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 
 public class SpringApplication {
     public static void main(String[] args) throws LifecycleException {
@@ -20,10 +17,10 @@ public class SpringApplication {
 //        System.out.println(SingleTonUser.getInstance());
 
 //        ApplicationContext context = new AnnotationConfigApplicationContext("com.csm");
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(AppConfig.class);
+//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+//        context.register(AppConfig.class);
 //        context.addApplicationListener(new ApplicationStatedListener());
-        context.refresh();
+//        context.refresh();
 //        CollectionUtils.arrayToList(context.getBeanDefinitionNames()).forEach(item -> System.out.println(item));
 //        UserService userService = (UserService) context.getBean("userService");
 //        UserService userService1 = context.getBean(UserService.class);
@@ -42,6 +39,8 @@ public class SpringApplication {
 //        carDao.drive();
 //        carDao.stop();
 
+//        dispatcherServlet.setApplicationContext();
+
         Tomcat tomcat = new Tomcat();
         Connector connector = new Connector();
         connector.setPort(8888);
@@ -56,10 +55,19 @@ public class SpringApplication {
         standardContext.setPath("/mvc");
 
         tomcat.getHost().addChild(standardContext);
-        tomcat.addServlet("/mvc", "helloServlet", new HelloServlet());
-        standardContext.addServletMappingDecoded("/hello", "helloServlet");
-
+//        tomcat.addServlet("/mvc", "helloServlet", new HelloServlet());
+//        standardContext.addServletMappingDecoded("/hello", "helloServlet");
         tomcat.start();
+
+        AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
+        webApplicationContext.register(MvcConfig.class);
+        webApplicationContext.setServletContext(standardContext.getServletContext());
+        webApplicationContext.refresh();
+        DispatcherServlet dispatcherServlet = new DispatcherServlet(webApplicationContext);
+
+        tomcat.addServlet("/mvc", "dispatcher", dispatcherServlet);
+        standardContext.addServletMappingDecoded("/", "dispatcher");
+
         tomcat.getServer().await(); // 维持tomcat服务，否则tomcat一启动就会关闭
     }
 }
